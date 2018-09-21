@@ -26,6 +26,10 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+
     <!-- Products Load -->
     <script src="js/products.js"></script>
 
@@ -34,6 +38,9 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+
     <![endif]-->
 </head>
 <body>
@@ -41,7 +48,7 @@
 <!--================Header Menu Area =================-->
 <header class="main_menu_area">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="brandImg" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
             <span></span>
@@ -49,19 +56,27 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#whoweare">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">More</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li title="Ve está página web en español"><a href="#"><i class="fa fa-language fa-lg" aria-hidden="true"></i> Language</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-language fa-lg" aria-hidden="true"></i> Language
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Español</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
 </header>
 <!--================End Header Menu Area =================-->
-<div id="google_translate_element"></div>
+
 <!--================Banner Area =================-->
 <section class="banner_area">
     <div class="container">
@@ -87,100 +102,89 @@
     </div>
     <div class="ms_portfolio_inner">
         <!-- Panels -->
-        <div class="row">
-            <script>
-                function drawPanels() {
-                    let modal = "<div class=\"col-md-3 col-xs-12 ms_p_item brand arc lights\">\n" +
-                        "            <img src=\"img/products/lamp1.2.png\" alt=\"\">\n" +
-                        "            <center>\n" +
-                        "                <h3>Battery 1</h3>\n" +
-                        "                <p>Description of battery</p><br>\n" +
-                        "                <button type=\"button\" class=\"btn btn-success details\">Technical details</button>\n" +
-                        "            </center>\n" +
-                        "        </div>";
-                    document.write(modal);
-                }
-                drawPanels();
-            </script>
-        </div>
+        <script>
+            drawPanels('Titulo de prueba', 'Detalles', 'primerPanel', 'Título Modal', 'panelNumeroUno', 'panel0/panel0.png', 'panel0/panel0.png', 'panel0/panel0.png', 'panel0/panel0.png', 'Voltaje', "35.ov", 'Máximo poder', '280W', 'Material', 'Silicio', 'Cerrar', 'Cotizar');
+            drawPanels('Titulo de prueba 2', 'Detalles 2', 'SegundoPanel', 'Título Modal 2', 'panelNumeroDos', 'panel1/panel0.png', 'panel1/panel1.png', 'panel1/panel2.png', 'panel1/panel3.jpg', 'Voltaje', "40.ov", 'Máximo poder', '280W', 'Material', 'Silicio', 'Cerrar', 'Cotizar 2');
+
+        </script>
     </div>
 
     <div class="ms_portfolio_inner">
         <!-- Batteries -->
-        <div class="col-md-3 col-xs-12 ms_p_item brand arc batteries">
-            <img src="img/products/battery2.3.png" alt="">
-            <center>
-                <h3>Light 1</h3>
-                <p>Description of Lights</p><br>
-                <button type="button" class="btn btn-success details">Technical details</button>
-            </center>
-        </div>
-        <div class="col-md-3 col-xs-12 ms_p_item brand arc batteries">
-            <img src="img/products/battery2.3.png" alt="">
-            <center>
-                <h3>Light 2</h3>
-                <p>Description of Lights</p><br>
-                <button type="button" class="btn btn-success details">Technical details</button>
-            </center>
-        </div>
-        <div class="col-md-3 col-xs-12 ms_p_item brand arc batteries">
-            <img src="img/products/battery2.3.png" alt="">
-            <center>
-                <h3>Light 3</h3>
-                <p>Description of Lights</p><br>
-                <button type="button" class="btn btn-success details">Technical details</button>
-            </center>
-        </div>
-        <div class="col-md-3 col-xs-12 ms_p_item brand arc batteries">
-            <img src="img/products/battery2.3.png" alt="">
-            <center>
-                <h3>Light 4</h3>
-                <p>Description of Lights</p><br>
-                <button type="button" class="btn btn-success details">Technical details</button>
-            </center>
-        </div>
+
     </div>
 
     <div class="ms_portfolio_inner">
         <!-- Lights -->
-        <div class="col-md-3 col-xs-12 ms_p_item brand arc lights">
-            <img src="img/products/lamp1.2.png" alt="">
-            <center>
-                <h3>Battery 1</h3>
-                <p>Description of battery</p><br>
-                <button type="button" class="btn btn-success details">Technical details</button>
-            </center>
+
+    </div>
+    <div class="ms_portfolio_inner">
+        <div class="row">
+
         </div>
-        <div class="col-md-3 col-xs-12 ms_p_item brand arc lights">
-            <img src="img/products/lamp1.2.png" alt="">
-            <center>
-                <h3>Battery 2</h3>
-                <p>Description of battery</p><br>
-                <button type="button" class="btn btn-success details">Technical details</button>
-            </center>
-        </div>
-        <div class="col-md-3 col-xs-12 ms_p_item brand arc lights">
-            <img src="img/products/lamp1.2.png" alt="">
-            <center>
-                <h3>Battery 3</h3>
-                <p>Description of battery</p><br>
-                <button type="button" class="btn btn-success details">Technical details</button>
-            </center>
-        </div>
-        <div class="col-md-3 col-xs-12 ms_p_item brand arc lights">
-            <img src="img/products/lamp1.2.png" alt="">
-            <center>
-                <h3>Battery 4</h3>
-                <p>Description of battery</p><br>
-                <button type="button" class="btn btn-success details">Technical details</button><br>
-            </center>
+        <div class="row">
+            <script>
+
+            </script>
         </div>
     </div>
 </section>
+
+<!-- Check the price modal -->
+<div class="modal fade" id="checkPrice" tabindex="-1" role="dialog" aria-labelledby="checkPriceTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="checkPriceTitle">Check the price</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="contact_us_form row" action="" method="post" id="contactForm" novalidate="novalidate">
+                    <div class="form-group col-sm-3">
+                        <input type="text" class="form-control" id="id_product" name="id_product" placeholder="Product Name">
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Quantity" min="1" value="1" required>
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <input type="tel" class="form-control" id="number" name="number" placeholder="Telephone">
+                    </div>
+
+                    <div class="form-group col-lg-6">
+                        <input type="text" class="form-control" id="company" name="company" placeholder="Company">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Country Department or City" required>
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                        <button type="submit" value="submit" class="btn submit_btn form-control" >Quote</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Check the price modal -->
+
 <!--================End Portfolio Area =================-->
 
 <!--================Footer Area =================-->
-<footer class="footr_area">
+<footer class="footer_area">
     <div class="footer_copyright">
         <div class="container">
             <div class="float-sm-left">
@@ -208,8 +212,7 @@
 
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-3.2.1.min.js"></script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

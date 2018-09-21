@@ -1827,7 +1827,7 @@ i:before {
 
 .brandImg {
   width: 11em;
-  height: 5em;
+  height: 4.2em;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -1842,6 +1842,21 @@ i:before {
 .dropdown-item {
   line-height: 3em !important;
   text-align: center;
+}
+
+.center_c {
+    text-align: center;
+}
+
+.sunshineLogoSmall {
+    width: 13em;
+    height: 10.5em;
+}
+
+.cardLogo {
+  width: 9em;
+  height: 4.5em;
+  margin: 3em auto auto -2em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1869,6 +1884,10 @@ i:before {
 
   .dropdown-menu {
     background-color: #000 !important;
+  }
+
+  .cardLogo {
+    margin: auto;
   }
 
 }
