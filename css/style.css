@@ -26,10 +26,10 @@ Table of Content:
 06/ feature
 07/ button
 08/ service
-09/ testimonials 
-10/ blog 
-11/ contact 
-12/ footer 
+09/ testimonials
+10/ blog
+11/ contact
+12/ footer
 =====================================================================*/
 /*----------------------------------------------------*/
 /*font Variables*/
@@ -1762,8 +1762,18 @@ i:before {
   color: #000 !important;
 }
 
+.redimentionImg {
+  width: 50% ;
+  height: 50% ;
+}
 .bigImage {
   width: 15em !important;
+  height: 23.1em;
+  margin: auto auto 1px;
+}
+
+.bigImage2 {
+  width: 100% !important;
   height: 23.1em;
   margin: auto auto 1px;
 }
@@ -1827,10 +1837,11 @@ i:before {
 
 .brandImg {
   width: 11em;
-  height: 4.2em;
+  height: 4em;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  text-align: left;
 }
 
 .navLanguage {
@@ -1859,6 +1870,10 @@ i:before {
   margin: 3em auto auto -2em;
 }
 
+.main_menu_area .navbar .navbar-nav li {
+  margin-right: 30px !important;
+}
+
 @media only screen and (max-width: 600px) {
 
   .bigImage {
@@ -1866,6 +1881,8 @@ i:before {
     height: 15.1em;
     margin: auto auto 13px;
   }
+
+
   .languageSelect {
     font-size: 2em;
   }

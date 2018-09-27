@@ -1,19 +1,19 @@
 <?php
 
-    $to = "andress.mm4@gmail.com";
-    $from = $_REQUEST['email'];
-    $name = $_REQUEST['name'];
-    $subject = $_REQUEST['subject'];
-    $number = $_REQUEST['number'];
-    $cmessage = $_REQUEST['message'];
+    $to = "cgonzalez2064@gmail.com";
+    $from = $_POST['email'];
+    $name = $_POST['name'];
+    $subject = $_POST['subject'];
+    $number = $_POST['number'];
+    $cmessage = $_POST['message'];
 
     $headers = "From: $from";
-	$headers = "From: " . $from . "\r\n";
-	$headers .= "Reply-To: ". $from . "\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=utf-8\r\n";
+  	$headers = "From: " . $from . "\r\n";
+  	$headers .= "Reply-To: ". $from . "\r\n";
+  	$headers .= "MIME-Version: 1.0\r\n";
+  	$headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
-    $subject = "You have a message of SunshineSolar.";
+    $subject = "You have a message from SunshineSolar.";
 
     $logo = '#';
     $link = '#';
@@ -23,8 +23,8 @@
 	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
 	$body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
 	$body .= "</td></tr></thead><tbody><tr>";
-	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
-	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
+	$body .= "<td style='border:none;'><strong>Name:</strong> {$name} </td>";
+	$body .= "<td style='border:none;'><strong>Email:</strong> {$from} </td>";
 	$body .= "</tr>";
 	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$csubject}</td></tr>";
 	$body .= "<tr><td></td></tr>";
@@ -32,6 +32,11 @@
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
 
-    $send = mail($to, $subject, $body, $headers);
+    if($send = mail($to, $subject, $body, $headers)){
+      echo "Holaaaa";
+    }
+    else {
+      echo "No se envío el correo";
+    }
 
 ?>
