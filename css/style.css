@@ -1874,6 +1874,15 @@ i:before {
   margin-right: 30px !important;
 }
 
+.slideText {
+  color: #fff;
+  font-size: 2em;
+  font-weight: bolder;
+  padding-bottom: 80% !important;
+  margin-top: 0 !important;
+}
+
+
 @media only screen and (max-width: 600px) {
 
   .bigImage {
