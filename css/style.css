@@ -820,7 +820,7 @@ i:before {
       width: 797px;
       z-index: -1; }
   .best_3d_area .right_text {
-    width: calc(50% + 160px);
+    width: 100%;
     float: right; }
 
 .shap_slider_inner {
@@ -877,11 +877,12 @@ i:before {
 
 .text_3d {
   display: inline-block;
-  padding-left: 80px;
-  padding-top: 150px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 100px;
   width: 54%;
   float: left;
-  padding-right: 5px; }
+ }
   .text_3d p {
     font-size: 15px;
     line-height: 28px;
@@ -1084,7 +1085,7 @@ i:before {
   text-align: left;
   position: absolute;
   left: 30px;
-  top: 50%;
+  top: 10%;
   transform: translateY(-50%);
   max-width: 550px;
   width: 100%;
@@ -1876,10 +1877,45 @@ i:before {
 
 .slideText {
   color: #fff;
-  font-size: 2em;
-  font-weight: bolder;
-  padding-bottom: 80% !important;
+  font-family: Roboto;
+  /*font-size: 2.5em;*/
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin-bottom: 100px;
   margin-top: 0 !important;
+  background-color: rgba(54, 44, 48, 0.6);
+  background: rgba(54, 44, 48, 0.6);
+  border-radius: 10px;
+  background-size: cover;
+  width: 100%;
+}
+
+.testColor {
+  color: yellow;
+}
+
+.slideBackground {
+  background-color: #000 !important;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.leftImg {
+  border-radius: 10px; /*propiedad CSS3*/
+  -ms-border-radius: 10px; /*para IE 8*/
+  -moz-border-radius:10px; /*Firefox*/
+  -webkit-border-radius: 10px; /*WebKit y Safari*/
+  -khtml-border-radius: 10px;
+  behavior: url(border-radius.htc);/*IE*/
+  height: auto;
+}
+
+.upSpace {
+  padding-top: 5em !important;
+}
+
+.moreContact:hover {
+  color: #FFC600;
 }
 
 
@@ -1915,5 +1951,35 @@ i:before {
   .cardLogo {
     margin: auto;
   }
+
+  .best_3d_area .left_3d {
+    width: 100%
+    float: left;
+    position: fixed;
+    text-align: justify;
+  }
+
+  .text_3d {
+    display: inline-block;
+    padding-top: 100px;
+    width: 100%;
+    float: left;
+    padding-right: 5px;
+    margin-right: 10%;
+  }
+
+    .text_3d > h3 {
+      text-align: left !important;
+    }
+
+    .text_3d p {
+      font-size: 1.5em;
+      line-height: 60px;
+      color: #7c8d93;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+     }
+
+
 
 }
