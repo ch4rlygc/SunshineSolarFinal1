@@ -35,6 +35,16 @@
         <![endif]-->
     </head>
     <body>
+        <div id="content-load">
+            <div id="load"><img src="img/load.png" alt=""></div>
+        </div>
+        <script>
+            window.onload = () =>{
+                var contentLoad = document.getElementById('content-load');
+
+                contentLoad.style.visibility = 'hidden';
+                contentLoad.style.opacity = '0';
+            }</script>
 
         <!--================Header Menu Area =================-->
         <header class="main_menu_area">
@@ -51,7 +61,7 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#whoweare">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="more.html">Información</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="products.html">Productos</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="products.html">Productos</a></li>
                         <li class="nav-item active"><a class="nav-link" href="contact.html">Contacto</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
