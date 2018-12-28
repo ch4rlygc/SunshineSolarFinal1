@@ -1991,12 +1991,11 @@ i:before {
 #load{
   height: 100px;
   width: 100px;
-  border-radius: 100%;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 50%;
+  bottom: 0;
   margin: auto;
   -webkit-animation: efect 1.5s linear infinite;
   -o-animation: efect 1.5s linear infinite ;

@@ -44,6 +44,16 @@
         <![endif]-->
     </head>
     <body>
+        <div id="content-load">
+            <div id="load"><img src="img/load.png" alt=""></div>
+        </div>
+        <script>
+            window.onload = () =>{
+                var contentLoad = document.getElementById('content-load');
+
+                contentLoad.style.visibility = 'hidden';
+                contentLoad.style.opacity = '0';
+            }</script>
 
         <!--================Header Menu Area =================-->
         <header class="main_menu_area">
@@ -89,17 +99,8 @@
         <!--================End Banner Area =================-->
 
         <!--================Portfolio Area =================-->
-        <!-- FIXME: pre load-->
-        <div id="content-load">
-            <div id="load"><img src="img/load.png" alt=""></div>
-        </div>
-        <script>
-            window.onload = () =>{
-                var contentLoad = document.getElementById('content-load');
-
-                contentLoad.style.visibility = 'hidden';
-                contentLoad.style.opacity = '0';
-            }</script>
+        
+        
 
         <section class="portfolio_area">
             <div class="container">
