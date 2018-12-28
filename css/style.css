@@ -3,7 +3,6 @@
 @Author: Rocky
 @URL: http://wethemez.com
 Author E-mail: rockybd1995@gmail.com
-
 This file contains the styling for the actual theme, this
 is the file you need to edit to change the look of the
 theme.
@@ -14,9 +13,7 @@ theme.
 @Developed By: Rocky
 @Developer URL: http://rocky.wethemez.com
 Author E-mail: rockybd1995@gmail.com
-
 @Default Styles
-
 Table of Content:
 01/ Variables
 02/ predefin
@@ -1953,7 +1950,7 @@ i:before {
   }
 
   .best_3d_area .left_3d {
-    width: 100%
+    width: 100%;
     float: left;
     position: fixed;
     text-align: justify;
@@ -1979,7 +1976,38 @@ i:before {
       font-family: "Roboto", sans-serif;
       font-weight: 500;
      }
+}
 
+#content-load{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+#load{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  margin: auto;
+  -webkit-animation: efect 1.5s linear infinite;
+  -o-animation: efect 1.5s linear infinite ;
+  animation: efect 1.5s linear infinite ;
+}
+#load img{
+  width: 100%;
+  height: 100%;
+}
 
-
+@keyframes efect{
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
 }
