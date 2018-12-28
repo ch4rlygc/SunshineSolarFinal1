@@ -44,6 +44,16 @@
         <![endif]-->
     </head>
     <body>
+        <div id="content-load">
+            <div id="load"><img src="img/load.png" alt=""></div>
+        </div>
+        <script>
+            window.onload = () =>{
+                var contentLoad = document.getElementById('content-load');
+
+                contentLoad.style.visibility = 'hidden';
+                contentLoad.style.opacity = '0';
+            }</script>
 
         <!--================Header Menu Area =================-->
         <header class="main_menu_area">
@@ -58,8 +68,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#whoweare">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="more.html">More</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#whoweare">Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="more.html">Information</a></li>
                         <li class="nav-item active"><a class="nav-link" href="products.html">Products</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-item dropdown">
@@ -67,8 +77,8 @@
                                 <i class="fa fa-language fa-lg" aria-hidden="true"></i> Language
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">English</a>
-                                <a class="dropdown-item" href="#">Español</a>
+                                <a class="dropdown-item" href="index.html">English</a>
+                                <a class="dropdown-item" href="../index.html">Español</a>
                             </div>
                         </li>
                     </ul>
@@ -82,13 +92,16 @@
             <div class="container">
                 <div class="banner_inner_text">
                     <h2>Products</h2>
-                    <p>See our best products</p>
+                    <p>Our best products</p>
                 </div>
             </div>
         </section>
         <!--================End Banner Area =================-->
 
         <!--================Portfolio Area =================-->
+
+
+
         <section class="portfolio_area">
             <div class="container">
                 <div class="portfolio_filter">
@@ -96,62 +109,43 @@
                         <li class="active" data-filter="*"><a href="#">All</a></li>
                         <li data-filter=".panels"><a href="#">Solar Panels</a></li>
                         <li data-filter=".batteries"><a href="#">Batteries</a></li>
-                        <li data-filter=".lights"><a href="#">LED Lights</a></li>
+                        <li data-filter=".inv"><a href="#">Inverters</a></li>
+                        <li data-filter=".lights"><a href="#">Led lights</a></li>
+                        <li data-filter=".lamps"><a href="#">Led lamps</a></li>
                     </ul>
                 </div>
             </div>
             <div class="ms_portfolio_inner">
                 <!-- Panels -->
                 <div class="row">
-                  <div class="col-md-3 col-sm-12 ms_p_item brand arc panels">
-                      <img src="img/products/panel0/panel0.png" alt="">
-                      <div class="center_c">
+                <div class="col-md-3 col-sm-12 ms_p_item brand arc panels">
+                    <img src="img/products/panel0/panel0.1.png" alt="">
+                    <div class="center_c">
 
-                          <h3>280W Solar Panel</h3>
-                          <!--<p>Description of panel</p>--><br>
-                          <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#panel0">See details</button>
-                          <br><br>
-                      </div>
-                  </div>
-                  <div class="modal fade" id="panel0" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <h3>280W Solar Panel</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#panel0">See details</button>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="modal fade" id="panel0" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
+                    <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="firstPanelTitle">280W Solar Panel | German Technology</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <h5 class="modal-title" id="firstPanelTitle">280W Solar Panel |German Technology</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                          </button>
+                        </button>
                         </div>
                         <div class="modal-body">
-                          <div id="firstPanel" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/products/panel0/panel0.png" alt="First slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100 bigImage" src="img/products/panel0/panel4.png" alt="Second slide">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="img/products/panel0/panel2.png" alt="Third slide" style="padding: 0 0 0.5em;">
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100 bigImage" src="img/products/panel0/panel3.png" alt="Third slide">
-                              </div>
-                              <a class="carousel-control-prev" href="#firstPanel" role="button" data-slide="prev">
-                                <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
-                              </a>
-                              <a class="carousel-control-next" href="#firstPanel" role="button" data-slide="next">
-                                <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
-                              </a>
-                            </div>
-                          </div>
+                        <img class="d-block w-100" src="img/products/panel0/panel0.1.png" alt="First slide">
                             <div class="row">
                                 <div class="col-md-8">
                                     <p>Voltage: <strong>35.0V</strong></p>
-                                    <p>Maximum Power (pmax): <strong>280W</strong></p>
+                                    <p>Poder Máximo (pmax): <strong>280W</strong></p>
                                     <p>Material: <strong>Silicon</strong></p>
                                     <p>AM = <strong>1.5</strong></p>
-                                    <p>International Quality Standards</p>
+                                    <p>Estándares internacionales de Cálidad</p>
                                 </div>
                                 <div class="col-md-4">
                                     <img src="img/logo2.png" class="cardLogo" alt="">
@@ -159,19 +153,19 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the Price</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                    </div>
+                </div>
 
 
-                   <!-- ******************************************************************************************************************************* -->
+                <!-- ******************************************************************************************************************************* -->
 
 
                     <div class="col-md-3 col-sm-12 ms_p_item brand arc panels">
-                        <img src="img/products/panel0/panel0.png" alt="">
+                        <img src="img/products/panel1/panel0.1.png" alt="">
                         <div class="center_c">
 
                             <h3>260W Solar Panel</h3>
@@ -184,38 +178,20 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="SecondPanelTitle">260W Solar Panel | German Technology</h5>
+                                    <h5 class="modal-title" id="SecondPanelTitle">260W Solar Panel | |German Technology</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div id="secondPanel" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img class="d-block w-100" src="img/products/panel1/panel0.png" alt="First slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel1/panel1.png" alt="Second slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel1/panel2.png" alt="Third slide" style="padding: 0 0 0.5em;">
-                                            </div>
-                                            <a class="carousel-control-prev" href="#secondPanel" role="button" data-slide="prev">
-                                                <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="carousel-control-next" href="#secondPanel" role="button" data-slide="next">
-                                                <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <img class="d-block w-100" src="img/products/panel1/panel0.1.png" alt="First slide">
                                     <div class="row">
                                         <div class="col-md-8">
                                             <p>Voltage: <strong>29.5V</strong></p>
-                                            <p>Maximum Power (pmax): <strong>260W</strong></p>
+                                            <pPoder Máximo (pmax): <strong>260W</strong></p>
                                             <p>Material: <strong>Silicon</strong></p>
                                             <p>AM = <strong>1.5</strong></p>
-                                            <p>International Quality Standards</p>
+                                            <p>International Quality Standards.</p>
                                         </div>
                                         <div class="col-md-4">
                                             <img src="img/logo2.png" class="cardLogo" alt="">
@@ -224,7 +200,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the Price</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +212,7 @@
 
 
                     <div class="col-md-3 col-sm-12 ms_p_item brand arc panels">
-                        <img src="img/products/panel3/panel0.png" alt="">
+                        <img src="img/products/panel2/panel0.1.png" alt="">
                         <div class="center_c">
 
                             <h3>150W Solar Panel</h3>
@@ -255,35 +231,14 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div id="thirdPanel" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img class="d-block w-100" src="img/products/panel2/panel0.png" alt="First slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel2/panel1.png" alt="Second slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100" src="img/products/panel2/panel2.png" alt="Third slide" style="padding: 0 0 0.5em;">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel2/panel3.png" alt="Third slide">
-                                            </div>
-                                            <a class="carousel-control-prev" href="#thirdPanel" role="button" data-slide="prev">
-                                                <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="carousel-control-next" href="#thirdPanel" role="button" data-slide="next">
-                                                <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <img class="d-block w-100" src="img/products/panel3/panel0.1.png" alt="First slide">
                                     <div class="row">
                                         <div class="col-md-8">
                                             <p>Voltage: <strong>17.5V</strong></p>
-                                            <p>Maximum Power (pmax): <strong>150W</strong></p>
+                                            <pPoder Máximo (pmax): <strong>150W</strong></p>
                                             <p>Material: <strong>Silicon</strong></p>
                                             <p>AM = <strong>1.5</strong></p>
-                                            <p>International Quality Standards</p>
+                                            <p>International Quality Standards.</p>
                                         </div>
                                         <div class="col-md-4">
                                             <img src="img/logo2.png" class="cardLogo" alt="">
@@ -292,7 +247,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the Price</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
                                 </div>
                             </div>
                         </div>
@@ -301,10 +256,10 @@
                     <!-- ******************************************************************************************************************************* -->
 
                     <div class="col-md-3 col-sm-12 ms_p_item brand arc panels">
-                        <img src="img/products/panel3/panel0.png" alt="">
+                        <img src="img/products/panel3/panel0.1.png" alt="">
                         <div class="center_c">
 
-                            <h3>70W Solar Panel</h3>
+                            <h3>80W Solar Panel</h3>
                             <!--<p>Description of panel</p>--><br>
                             <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#panel3">See details</button>
                             <br><br>
@@ -314,41 +269,20 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="fourthPanelTitle">70W Solar Panel | German Technology</h5>
+                                    <h5 class="modal-title" id="fourthPanelTitle">80W Solar Panel | German Technology</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div id="fourthPanel" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img class="d-block w-100" src="img/products/panel3/panel0.png" alt="First slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel2/panel1.png" alt="Second slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100" src="img/products/panel2/panel2.png" alt="Third slide" style="padding: 0 0 0.5em;">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel2/panel3.png" alt="Third slide">
-                                            </div>
-                                            <a class="carousel-control-prev" href="#fourthPanel" role="button" data-slide="prev">
-                                                <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="carousel-control-next" href="#fourthPanel" role="button" data-slide="next">
-                                                <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <img class="d-block w-100" src="img/products/panel3/panel0.1.png" alt="First slide">
                                     <div class="row">
                                         <div class="col-md-8">
                                             <p>Voltage: <strong>17.5V</strong></p>
-                                            <p>Maximum Power (pmax): <strong>70W</strong></p>
+                                            <pPoder Máximo (pmax): <strong>80W</strong></p>
                                             <p>Material: <strong>Silicon</strong></p>
                                             <p>AM = <strong>1.5</strong></p>
-                                            <p>International Quality Standards</p>
+                                            <p>International Quality Standards.</p>
                                         </div>
                                         <div class="col-md-4">
                                             <img src="img/logo2.png" class="cardLogo" alt="">
@@ -357,7 +291,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the Price</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
                                 </div>
                             </div>
                         </div>
@@ -371,10 +305,10 @@
                 <!-- Panels -->
                 <div class="row">
                     <div class="col-md-3 col-sm-12 ms_p_item brand arc panels">
-                        <img src="img/products/panel4/panel0.png" alt="">
+                        <img src="img/products/panel4/panel0.1.png" alt="">
                         <div class="center_c">
 
-                            <h3>60W Solar Panel</h3>
+                            <h3>70W Solar Panel</h3>
                             <!--<p>Description of panel</p>--><br>
                             <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#panel4">See details</button>
                             <br><br>
@@ -384,41 +318,20 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="fifthPanelTitle">60W Solar Panel | German Technology</h5>
+                                    <h5 class="modal-title" id="fifthPanelTitle">70W Solar Panel | German Technology</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div id="fifthPanel" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img class="d-block w-100" src="img/products/panel4/panel0.png" alt="First slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel4/panel1.png" alt="Second slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100" src="img/products/panel4/panel2.png" alt="Third slide" style="padding: 0 0 0.5em;">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel4/panel3.png" alt="Third slide">
-                                            </div>
-                                            <a class="carousel-control-prev" href="#fifthPanel" role="button" data-slide="prev">
-                                                <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="carousel-control-next" href="#fifthPanel" role="button" data-slide="next">
-                                                <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <img class="d-block w-100" src="img/products/panel3/panel0.1.png" alt="First slide">
                                     <div class="row">
                                         <div class="col-md-8">
                                             <p>Voltage: <strong>17.5V</strong></p>
-                                            <p>Maximum Power (pmax): <strong>60W</strong></p>
+                                            <pPoder Máximo (pmax): <strong>70W</strong></p>
                                             <p>Material: <strong>Silicon</strong></p>
                                             <p>AM = <strong>1.5</strong></p>
-                                            <p>International Quality Standards</p>
+                                            <p>International Quality Standards.</p>
                                         </div>
                                         <div class="col-md-4">
                                             <img src="img/logo2.png" class="cardLogo" alt="">
@@ -427,7 +340,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the Price</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
                                 </div>
                             </div>
                         </div>
@@ -438,51 +351,33 @@
 
 
                     <div class="col-md-3 col-sm-12 ms_p_item brand arc panels">
-                        <img src="img/products/panel0/panel0.png" alt="">
+                        <img src="img/products/panel5/panel0.1.png" alt="" class="">
                         <div class="center_c">
 
-                            <h3>260W Solar Panel</h3>
+                            <h3>60W Solar Panel</h3>
                             <!--<p>Description of panel</p>--><br>
-                            <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#panel1">See details</button>
+                            <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#panel5">See details</button>
                             <br><br>
                         </div>
                     </div>
-                    <div class="modal fade" id="panel1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal fade" id="panel5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="SecondPanelTitle">260W Solar Panel | German Technology</h5>
+                                    <h5 class="modal-title" id="5PanelTitle">60W Solar Panel | German Technology</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div id="secondPanel" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img class="d-block w-100" src="img/products/panel1/panel0.png" alt="First slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel1/panel1.png" alt="Second slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel1/panel2.png" alt="Third slide" style="padding: 0 0 0.5em;">
-                                            </div>
-                                            <a class="carousel-control-prev" href="#secondPanel" role="button" data-slide="prev">
-                                                <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="carousel-control-next" href="#secondPanel" role="button" data-slide="next">
-                                                <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <img class="d-block w-100" src="img/products/panel5/panel0.1.png" alt="First slide">
                                     <div class="row">
                                         <div class="col-md-8">
-                                            <p>Voltage: <strong>29.5V</strong></p>
-                                            <p>Maximum Power (pmax): <strong>260W</strong></p>
+                                            <p>Voltage: <strong>17.5V</strong></p>
+                                            <pPoder Máximo (pmax): <strong>60W</strong></p>
                                             <p>Material: <strong>Silicon</strong></p>
                                             <p>AM = <strong>1.5</strong></p>
-                                            <p>International Quality Standards</p>
+                                            <p>International Quality Standards.</p>
                                         </div>
                                         <div class="col-md-4">
                                             <img src="img/logo2.png" class="cardLogo" alt="">
@@ -491,7 +386,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the Price</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
                                 </div>
                             </div>
                         </div>
@@ -503,54 +398,32 @@
 
 
                     <div class="col-md-3 col-sm-12 ms_p_item brand arc panels">
-                        <img src="img/products/panel3/panel0.png" alt="">
+                        <img src="img/products/panel6/panel0.1.png" alt="">
                         <div class="center_c">
-
-                            <h3>150W Solar Panel</h3>
+                            <h3>40W Solar Panel</h3>
                             <!--<p>Description of panel</p>--><br>
-                            <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#panel2">See details</button>
+                            <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#panel6">See details</button>
                             <br><br>
                         </div>
                     </div>
-                    <div class="modal fade" id="panel2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal fade" id="panel6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="thirdPanelTitle">150W Solar Panel | German Technology</h5>
+                                    <h5 class="modal-title" id="seventh">40W Solar Panel | German Technology</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div id="thirdPanel" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img class="d-block w-100" src="img/products/panel2/panel0.png" alt="First slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel2/panel1.png" alt="Second slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100" src="img/products/panel2/panel2.png" alt="Third slide" style="padding: 0 0 0.5em;">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel2/panel3.png" alt="Third slide">
-                                            </div>
-                                            <a class="carousel-control-prev" href="#thirdPanel" role="button" data-slide="prev">
-                                                <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="carousel-control-next" href="#thirdPanel" role="button" data-slide="next">
-                                                <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <img class="d-block w-100" src="img/products/panel6/panel0.1.png" alt="First slide">
                                     <div class="row">
                                         <div class="col-md-8">
                                             <p>Voltage: <strong>17.5V</strong></p>
-                                            <p>Maximum Power (pmax): <strong>150W</strong></p>
+                                            <pPoder Máximo (pmax): <strong>40W</strong></p>
                                             <p>Material: <strong>Silicon</strong></p>
                                             <p>AM = <strong>1.5</strong></p>
-                                            <p>International Quality Standards</p>
+                                            <p>International Quality Standards.</p>
                                         </div>
                                         <div class="col-md-4">
                                             <img src="img/logo2.png" class="cardLogo" alt="">
@@ -559,7 +432,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the Price</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
                                 </div>
                             </div>
                         </div>
@@ -568,54 +441,33 @@
                     <!-- ******************************************************************************************************************************* -->
 
                     <div class="col-md-3 col-sm-12 ms_p_item brand arc panels">
-                        <img src="img/products/panel3/panel0.png" alt="">
+                        <img src="img/products/panel7/panel0.1.png" alt="">
                         <div class="center_c">
 
-                            <h3>70W Solar Panel</h3>
+                            <h3>20W Solar Panel</h3>
                             <!--<p>Description of panel</p>--><br>
-                            <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#panel3">See details</button>
+                            <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#panel7">See details</button>
                             <br><br>
                         </div>
                     </div>
-                    <div class="modal fade" id="panel3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal fade" id="panel7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="fourthPanelTitle">70W Solar Panel | German Technology</h5>
+                                    <h5 class="modal-title" id="eighth">20W Solar Panel | German Technology</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div id="fourthPanel" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img class="d-block w-100" src="img/products/panel3/panel0.png" alt="First slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel2/panel1.png" alt="Second slide">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100" src="img/products/panel2/panel2.png" alt="Third slide" style="padding: 0 0 0.5em;">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img class="d-block w-100 bigImage" src="img/products/panel2/panel3.png" alt="Third slide">
-                                            </div>
-                                            <a class="carousel-control-prev" href="#fourthPanel" role="button" data-slide="prev">
-                                                <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="carousel-control-next" href="#fourthPanel" role="button" data-slide="next">
-                                                <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <img class="d-block w-100" src="img/products/panel7/panel0.1.png" alt="First slide">
                                     <div class="row">
                                         <div class="col-md-8">
                                             <p>Voltage: <strong>17.5V</strong></p>
-                                            <p>Maximum Power (pmax): <strong>70W</strong></p>
+                                            <pPoder Máximo (pmax): <strong>20W</strong></p>
                                             <p>Material: <strong>Silicon</strong></p>
                                             <p>AM = <strong>1.5</strong></p>
-                                            <p>International Quality Standards</p>
+                                            <p>International Quality Standards.</p>
                                         </div>
                                         <div class="col-md-4">
                                             <img src="img/logo2.png" class="cardLogo" alt="">
@@ -624,7 +476,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the Price</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
                                 </div>
                             </div>
                         </div>
@@ -632,77 +484,642 @@
                 </div>
             </div>
 
-            <!-- ************************************************************************************************** ->
+            <!-- ************************************************************************************************** -->
             <div class="ms_portfolio_inner">
                 <!-- Batteries -->
-                <div class="col-md-3 col-xs-12 ms_p_item brand arc batteries">
-                    <img src="img/products/battery2.3.png" alt="">
-                    <center>
-                        <h3>Light 1</h3>
-                        <p>Description of Lights</p><br>
-                        <button type="button" class="btn btn-success details">Technical details</button>
-                    </center>
+
+                <!-- ********************************************************************************************** -->
+
+                <div class="col-md-4 col-sm-12 ms_p_item brand arc batteries">
+                    <img src="img/products/battery1/battery1.1.png" alt="">
+                    <div class="center_c">
+
+                        <h3>150 AH Battery</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#battery1">See details</button>
+                        <br><br>
+                    </div>
                 </div>
-                <div class="col-md-3 col-xs-12 ms_p_item brand arc batteries">
-                    <img src="img/products/battery2.3.png" alt="">
-                    <center>
-                        <h3>Light 2</h3>
-                        <p>Description of Lights</p><br>
-                        <button type="button" class="btn btn-success details">Technical details</button>
-                    </center>
+                <div class="modal fade" id="battery1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="firstBatteryTitle">Deep Cycle Gel Battery | German Technology</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="firstBattery" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100 bigImage2" src="img/products/battery1/battery1.1.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 bigImage2" src="img/products/battery1/battery1.2.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 bigImage2" src="img/products/battery1/battery1.3.png" alt="Third slide" style="padding: 0 0 0.5em;">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#firstBattery" role="button" data-slide="prev">
+                                            <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#firstBattery" role="button" data-slide="next">
+                                            <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>AH: <strong>150</strong></p>
+                                        <p>Volts: <strong>12V</strong></p>
+                                        <p>International Quality Standards.</p>
+                                        <p>Compact size</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-xs-12 ms_p_item brand arc batteries">
-                    <img src="img/products/battery2.3.png" alt="">
-                    <center>
-                        <h3>Light 3</h3>
-                        <p>Description of Lights</p><br>
-                        <button type="button" class="btn btn-success details">Technical details</button>
-                    </center>
+
+                <!-- ********************************************************************************************** -->
+
+                <div class="col-md-4 col-sm-12 ms_p_item brand arc batteries">
+                    <img src="img/products/battery2/battery2.1.1.png" alt="">
+                    <div class="center_c">
+
+                        <h3>150 AH Battery</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#battery2">See details</button>
+                        <br><br>
+                    </div>
                 </div>
-                <div class="col-md-3 col-xs-12 ms_p_item brand arc batteries">
-                    <img src="img/products/battery2.3.png" alt="">
-                    <center>
-                        <h3>Light 4</h3>
-                        <p>Description of Lights</p><br>
-                        <button type="button" class="btn btn-success details">Technical details</button>
-                    </center>
+                <div class="modal fade" id="battery2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="secondBatteryTitle">Deep Cycle Gel Battery | German Technology</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="secondBattery" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100 bigImage2" src="img/products/battery2/battery2.1.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 bigImage2" src="img/products/battery2/battery2.2.png" alt="Second slide" style="height: auto !important; margin: 3.7em auto 6em auto;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 bigImage2" src="img/products/battery2/battery2.3.png" alt="Third slide" style="padding: 0 0 0.5em;">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#secondBattery" role="button" data-slide="prev">|
+                                            <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#secondBattery" role="button" data-slide="next">
+                                            <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>AH: <strong>150</strong></p>
+                                        <p>Volts: <strong>12V</strong></p>
+                                        <p>International Quality Standards.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- ********************************************************************************************** -->
+
+                <div class="col-md-4 col-sm-12 ms_p_item brand arc batteries">
+                    <img src="img/products/battery3/battery3.1.1.png" alt="">
+                    <div class="center_c">
+
+                        <h3>50 AH Battery</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#battery3">See details</button>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="modal fade" id="battery3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="thirdBatteryTitle">Deep Cycle Gel Battery | German Technology</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="thirdBattery" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100 bigImage2" src="img/products/battery3/battery3.1.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 bigImage2" src="img/products/battery3/battery3.2.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 bigImage2" src="img/products/battery3/battery3.3.png" alt="Third slide" style="padding: 0 0 0.5em;">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#thirdBattery" role="button" data-slide="prev">
+                                            <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#thirdBattery" role="button" data-slide="next">
+                                            <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>AH: <strong>50</strong></p>
+                                        <p>Volts: <strong>12V</strong></p>
+                                        <p>International Quality Standards.</p>
+                                        <p>Compact size</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ********************************************************************************************** -->
+
             </div>
+
+
+
+
+
+            <!-- ************************************************************************************************** -->
+            <!-- Inversores -->
+
+            <div class="ms_portfolio_inner">
+
+                <!-- ********************************************************************************************** -->
+
+                <div class="col-md-4 col-sm-12 ms_p_item brand arc inv">
+                    <img src="img/products/inv1/inv1.1.png" alt="">
+                    <div class="center_c">
+
+                        <h3>Inverter 3000, 2500 watts</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#inversor1">See details</button>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="modal fade" id="inversor1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="firstInversorTitle">Pure Wave Inverter | German Technology</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="firstInversor" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100 bigImage2" src="img/products/inv1/inv1.1.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 bigImage2" src="img/products/inv1/inv1.2.png" alt="Second slide">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#firstInversor" role="button" data-slide="prev">
+                                            <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#firstInversor" role="button" data-slide="next">
+                                            <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>Volts: <strong>24</strong></p>
+                                        <p>Onda Pura<strong></strong></p>
+                                        <p>International Quality Standards.</p>
+                                        <p>Compact size</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ********************************************************************************************** -->
+
+                <div class="col-md-4 col-sm-12 ms_p_item brand arc inv">
+                    <img src="img/products/inv2/inv2.1.png" alt="">
+                    <div class="center_c">
+
+                        <h3>Inversor de 2000, 1500 1000 watts</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#inversor2">See details</button>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="modal fade" id="inversor2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="secondInversorTitle">Pure Wave Inverter | German Technology</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div id="secondInversor" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100 bigImage2" src="img/products/inv2/inv2.1.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 bigImage2" src="img/products/inv2/inv2.2.png" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100 bigImage2" src="img/products/inv2/inv2.3.png" alt="Third slide">
+                                    </div>
+                                    <a class="carousel-control-prev" href="#secondInversor" role="button" data-slide="prev">
+                                        <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="carousel-control-next" href="#secondInversor" role="button" data-slide="next">
+                                        <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Volts: <strong>24</strong></p>
+                                    <p>Pre Wave<strong></strong></p>
+                                    <p>International Quality Standards.</p>
+                                    <p>Compact size</p>
+                                </div>
+                                <div class="col-md-4">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ********************************************************************************************** -->
+
+
+                <!-- ********************************************************************************************** -->
+
+            </div>
+
+
+
+            <!-- ************************************************************************************************** -->
+
+
+            <!-- ************************************************************************************************** -->
+            <!-- LAMPARAS -->
+
+            <div class="ms_portfolio_inner">
+
+                <!-- ******************************************************************  **************************** -->
+
+                <div class="col-md-4 col-sm-12 ms_p_item brand arc lamps">
+                    <img src="img/products/slamp1/slamp1.1.png" alt="">
+                    <div class="center_c">
+
+                        <h3>Lámpara LED T8</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#sLamp1">See details</button>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="modal fade" id="sLamp1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="firstInversorTitle">Lámpara LED T8 | German Technology</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="firstSLamp" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100 " src="img/products/slamp1/slamp1.1.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 " src="img/products/slamp1/slamp1.2.png" alt="Second slide">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#firstSLamp" role="button" data-slide="prev">
+                                            <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#firstSLamp" role="button" data-slide="next">
+                                            <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                    <p>Volts: <strong>12</strong></p>
+                                    <p>30 & 60 CM<strong></strong></p>
+                                    <p>International Quality Standards.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ********************************************************************************************** -->
+
+                <div class="col-md-4 col-sm-12 ms_p_item brand arc lamps">
+                    <img src="img/products/slamp1/slamp1.1.png" alt="">
+                    <div class="center_c">
+
+                        <h3>LED T8 lamp</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#sLamp2">See details</button>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="modal fade" id="sLamp2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="secondInversorTitle">LED T8 lamp | German Technology</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <div id="secondSLamp" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/products/slamp2/slamp2.1.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/products/slamp2/slamp2.2.png" alt="Second slide">
+                                    </div>
+                                    <a class="carousel-control-prev" href="#secondSLamp" role="button" data-slide="prev">
+                                        <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="carousel-control-next" href="#secondSLamp" role="button" data-slide="next">
+                                        <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Volts: <strong>12</strong></p>
+                                    <p>15 CM<strong></strong></p>
+                                    <p>International Quality Standards.</p>
+                                </div>
+                                <div class="col-md-4">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ********************************************************************************************** -->
+
+
+                <!-- ********************************************************************************************** -->
+
+            </div>
+
+
+
+            <!-- ************************************************************************************************** -->
+
 
             <div class="ms_portfolio_inner">
                 <!-- Lights -->
-                <div class="col-md-3 col-xs-12 ms_p_item brand arc lights">
-                    <img src="img/products/lamp1.2.png" alt="">
-                    <center>
-                        <h3>Battery 1</h3>
-                        <p>Description of battery</p><br>
-                        <button type="button" class="btn btn-success details">Technical details</button>
-                    </center>
+
+                <!-- ********************************************************************************************** -->
+
+                <div class="col-md-4 col-sm-12 ms_p_item brand arc lights">
+                    <img src="img/products/lamp1/lamp1.1.1.png" alt="">
+                    <div class="center_c">
+
+                        <h3>LED light saving T8</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#light1">See details</button>
+                        <br><br>
+                    </div>
                 </div>
-                <div class="col-md-3 col-xs-12 ms_p_item brand arc lights">
-                    <img src="img/products/lamp1.2.png" alt="">
-                    <center>
-                        <h3>Battery 2</h3>
-                        <p>Description of battery</p><br>
-                        <button type="button" class="btn btn-success details">Technical details</button>
-                    </center>
+                <div class="modal fade" id="light1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="firstLightTitle">LED light saving T8</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="firstLight" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100 bigImage2" src="img/products/lamp1/lamp1.3.png" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 bigImage2" src="img/products/lamp1/lamp1.2.png" alt="Second slide">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#firstLight" role="button" data-slide="prev">
+                                            <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#firstLight" role="button" data-slide="next">
+                                            <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>T8 <strong>LED</strong></p>
+                                        <p>Volts: <strong>12V</strong></p>
+                                        <p>High efficiency</p>
+                                        <p>Saver</p>
+                                        <p>International Quality Standards.</p>
+                                        <p>Product of low carbon emission and protection of the environment</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-xs-12 ms_p_item brand arc lights">
-                    <img src="img/products/lamp1.2.png" alt="">
-                    <center>
-                        <h3>Battery 3</h3>
-                        <p>Description of battery</p><br>
-                        <button type="button" class="btn btn-success details">Technical details</button>
-                    </center>
+
+                <!-- ********************************************************************************************** -->
+
+                <div class="col-md-4 col-sm-12 ms_p_item brand arc lights">
+                    <img src="img/products/lamp2/lamp2.1.1.png" alt="">
+                    <div class="center_c">
+
+                        <h3>High power LED lamp DC</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#light2">See details</button>
+                        <br><br>
+                    </div>
                 </div>
-                <div class="col-md-3 col-xs-12 ms_p_item brand arc lights">
-                    <img src="img/products/lamp1.2.png" alt="">
-                    <center>
-                        <h3>Battery 4</h3>
-                        <p>Description of battery</p><br>
-                        <button type="button" class="btn btn-success details">Technical details</button><br>
-                    </center>
+                <div class="modal fade" id="light2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="secondLightTitle">High power LED lamp DC</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="secondLight" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100 bigImage2" src="img/products/lamp2/lamp2.1.png" alt="First slide" style="height: 18em; margin-bottom: 5.2em;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 bigImage2" src="img/products/lamp2/lamp2.2.png" alt="Second slide">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#secondLight" role="button" data-slide="prev">
+                                            <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#secondLight" role="button" data-slide="next">
+                                            <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p><strong>DC12V</strong></p>
+                                        <p>Color: <strong>White</strong></p>
+                                        <p>High efficiency</p>
+                                        <p>Saver</p>
+                                        <p>International Quality Standards.</p>
+                                        <p>Product of low carbon emission and protection of the environment</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- ********************************************************************************************** -->
+
+                <div class="col-md-4 col-sm-12 ms_p_item brand arc lights">
+                    <img src="img/products/lamp3/lamp3.1.1.png" alt="">
+                    <div class="center_c">
+
+                        <h3>High power LED lamp DC</h3>
+                        <!--<p>Description of panel</p>--><br>
+                        <button type="button" class="btn btn-success details" data-toggle="modal" data-target="#light3">See details</button>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="modal fade" id="light3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="thirdLightTitle">High power LED lamp DC</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="thirdLight" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100 bigImage2" src="img/products/lamp3/lamp3.1.png" alt="First slide" style="height: 18em; margin-bottom: 5.2em;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 bigImage2" src="img/products/lamp3/lamp3.2.png" alt="Second slide">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#thirdLight" role="button" data-slide="prev">
+                                            <i class="fa fa-angle-left fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#thirdLight" role="button" data-slide="next">
+                                            <i class="fa fa-angle-right fa-2x nextAndPrevius" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p><strong>DC12V</strong></p>
+                                        <p>Color: <strong>White</strong></p>
+                                        <p>High efficiency</p>
+                                        <p>Saver</p>
+                                        <p>International Quality Standards.</p>
+                                        <p>Product of low carbon emission and protection of the environment</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkPrice">Check the price</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ********************************************************************************************** -->
+
             </div>
         </section>
 
@@ -772,20 +1189,14 @@
                     </div>
                     <div class="float-sm-right">
                         <ul>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
         <!--================End Footer Area =================-->
-
-
 
 
 
