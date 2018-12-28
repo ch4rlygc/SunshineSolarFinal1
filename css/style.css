@@ -36,6 +36,12 @@ Table of Content:
 .col-md-offset-right-1, .col-lg-offset-right-1 {
   margin-right: 8.33333333%; }
 
+*{
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+}
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 ul {
@@ -56,6 +62,10 @@ a {
   padding: 0px; }
 
 body {
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
   line-height: 28px;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
@@ -983,27 +993,27 @@ i:before {
       font-size: 13px;
       font-family: "Open Sans", sans-serif;
       font-style: italic;
-      color: #a5bbd0; }
+      color: #516679; }
       .contact_us_form .form-group input.placeholder {
         font-size: 13px;
         font-family: "Open Sans", sans-serif;
         font-style: italic;
-        color: #a5bbd0; }
+        color: #586f83; }
       .contact_us_form .form-group input:-moz-placeholder {
         font-size: 13px;
         font-family: "Open Sans", sans-serif;
         font-style: italic;
-        color: #a5bbd0; }
+        color: #516679; }
       .contact_us_form .form-group input::-moz-placeholder {
         font-size: 13px;
         font-family: "Open Sans", sans-serif;
         font-style: italic;
-        color: #a5bbd0; }
+        color: #516679; }
       .contact_us_form .form-group input::-webkit-input-placeholder {
         font-size: 13px;
         font-family: "Open Sans", sans-serif;
         font-style: italic;
-        color: #a5bbd0; }
+        color: #516679; }
       .contact_us_form .form-group input:focus {
         border-image: -moz-linear-gradient(0deg, #6ebdfe 0%, #9b8aff 100%);
         border-image: -webkit-linear-gradient(0deg, #6ebdfe 0%, #9b8aff 100%);
@@ -1020,28 +1030,28 @@ i:before {
       font-size: 13px;
       font-family: "Open Sans", sans-serif;
       font-style: italic;
-      color: #a5bbd0;
+      color: #516679;
       resize: none; }
       .contact_us_form .form-group textarea.placeholder {
         font-size: 13px;
         font-family: "Open Sans", sans-serif;
         font-style: italic;
-        color: #a5bbd0; }
+        color: #516679; }
       .contact_us_form .form-group textarea:-moz-placeholder {
         font-size: 13px;
         font-family: "Open Sans", sans-serif;
         font-style: italic;
-        color: #a5bbd0; }
+        color: #516679; }
       .contact_us_form .form-group textarea::-moz-placeholder {
         font-size: 13px;
         font-family: "Open Sans", sans-serif;
         font-style: italic;
-        color: #a5bbd0; }
+        color: #516679; }
       .contact_us_form .form-group textarea::-webkit-input-placeholder {
         font-size: 13px;
         font-family: "Open Sans", sans-serif;
         font-style: italic;
-        color: #a5bbd0; }
+        color: #516679; }
       .contact_us_form .form-group textarea:focus {
         border-image: -moz-linear-gradient(0deg, #6ebdfe 0%, #9b8aff 100%);
         border-image: -webkit-linear-gradient(0deg, #6ebdfe 0%, #9b8aff 100%);
