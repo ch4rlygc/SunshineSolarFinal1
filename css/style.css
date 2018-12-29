@@ -1844,7 +1844,7 @@ i:before {
 }
 
 .brandImg {
-  width: 11em;
+  width: auto;
   height: 4em;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
