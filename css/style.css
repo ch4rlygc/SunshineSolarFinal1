@@ -2020,3 +2020,6 @@ i:before {
   from { transform: rotate(0deg);}
   to { transform: rotate(360deg);}
 }
+
+.sizeImg{
+  border-radius: 30% 2% 2% 2%;
