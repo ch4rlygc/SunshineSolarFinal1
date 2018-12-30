@@ -179,7 +179,7 @@ i:before {
       text-align: left; }
       .main_menu_area .navbar .navbar-nav li {
         display: inline-block;
-        margin-right: 55px; }
+        margin-right: 50px; }
         .main_menu_area .navbar .navbar-nav li a {
           font-size: 13px;
           font-family: "Roboto", sans-serif;
@@ -1879,7 +1879,7 @@ i:before {
 }
 
 .main_menu_area .navbar .navbar-nav li {
-  margin-right: 30px !important;
+  margin-right: 12px !important;
 }
 
 .slideText {
@@ -1981,7 +1981,7 @@ i:before {
 
     .text_3d p {
       font-size: 1.5em;
-      
+
       color: #7c8d93;
       font-family: "Roboto", sans-serif;
       font-weight: 500;
