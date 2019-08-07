@@ -1,0 +1,10 @@
+.categorySelect {
+  font-size: .8rem;
+  border-radius: 10rem;
+  padding: 1.5rem 1rem;
+  color: red !important;
+}
+
+.topMargin {
+  margin-top: 10%;
+}

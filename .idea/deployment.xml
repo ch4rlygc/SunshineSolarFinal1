@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="SunshineSolarFina">
+  <component name="PublishConfigData" serverName="localhost">
     <serverData>
-      <paths name="SunshineSolarFina">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="SunshineSolarFinal" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="SunshineSolarFinal">
+      <paths name="localhost">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

@@ -5,6 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130645683-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-130645683-2');
+        </script>
+
         <link rel="icon" href="../img/icon/logo.ico" type="image/x-icon" />
 
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -40,19 +49,20 @@
     <body>
         <!--<div id="content-load">
                 <div id="load"><img src="../img/load.png" alt=""></div>
-            </div>-->
-            <script>
-                /*window.onload = () =>{
-                    var contentLoad = document.getElementById('content-load');
+        </div>-->
+        <script>
+            window.onload = () =>{
+                var contentLoad = document.getElementById('content-load');
 
-                    contentLoad.style.visibility = 'hidden';
-                    contentLoad.style.opacity = '0';*/
-                }</script>
+                contentLoad.style.visibility = 'hidden';
+                contentLoad.style.opacity = '0';
+            }
+        </script>
 
       <!--================Header Menu Area =================-->
       <header class="main_menu_area">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="index.html"><img src="../img/logo.png" class="brandImg" alt=""></a>
+              <a class="navbar-brand" href="index.html"><img src="../img/logo1.png" class="brandImg" alt=""></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span></span>
                   <span></span>
@@ -153,7 +163,7 @@
                 <div class="right_text_inner">
                     <div class="text_3d weAre">
                         <div class="l_title">
-                            <img src="../img/logo2.png" class="sunshineLogoSmall" alt="">
+                            <img src="../img/logo2.jpg" class="sunshineLogoSmall" alt="">
                             <h6>Descubre un poco más</h6>
                             <h2>¿Quiénes somos?</h2>
                         </div>
@@ -179,50 +189,58 @@
         <section class="service_feature">
             <div class="container">
                 <div class="c_title">
-                    <img src="../img/icon/title-icon.png" alt="">
+                    <img src="../img/icon/title-icon.jpg" alt="">
                     <h6>Lo mejor de <span>Sunshine</span><span style="color: #FFC600;"> Solar</span></h6>
-                    <h2>Nuestros productos</h2>
+                    <h2>Algunos de nuestros productos</h2>
                 </div>
                 <div class="row feature_inner">
                     <div class="col-lg-3 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="../img/icon/f-icon-1.png" alt="">
-                            </div>
-                            <h4>Paneles Solares</h4>
-                            <p>Paneles solares con tecnología alemana de 10, 15, 15, 20, 40, 60 vatios y más</p><br>
-                            <a class="more_btn" href="products.html">Ver más</a>
-                        </div>
+                        <a  href="products.html">
+                          <div class="feature_item">
+                              <div class="f_icon">
+                                  <img src="../img/icon/solarPanel.png" alt="">
+                              </div>
+                              <h4>Paneles Solares</h4>
+                              <p>Paneles solares con tecnología alemana de 10, 15, 15, 20, 40, 60 vatios y más</p><br>
+                              <button class="more_btn">Ver más</button>
+                          </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="../img/icon/f-icon-2.png" alt="">
-                            </div>
-                            <h4>Baterías</h4>
-                            <p>Baterías especiales de gel de Ciclo profundo de 150AH Y 50AH.</p><br><br>
-                            <a class="more_btn" href="products.html">Ver más</a>
-                        </div>
+                        <a href="products.html">
+                          <div class="feature_item">
+                              <div class="f_icon">
+                                  <img src="../img/icon/batteryIcon.png" alt="">
+                              </div>
+                              <h4>Baterías</h4>
+                              <p>Baterías especiales de gel de Ciclo profundo de 150AH Y 50AH.</p><br><br>
+                              <button class="more_btn">Ver más</button>
+                          </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="../img/icon/f-icon-3.png" alt="">
-                            </div>
-                            <h4>Luces LED</h4>
-                            <p>Luces LED ultra ahorradoras de 12 Voltios</p><br><br>
-                            <a class="more_btn" href="products.html">Ver más</a>
-                        </div>
+                        <a href="products.html">
+                          <div class="feature_item">
+                              <div class="f_icon">
+                                  <img src="../img/icon/ledLamp.png" alt="">
+                              </div>
+                              <h4>Luces LED</h4>
+                              <p>Luces LED ultra ahorradoras de 12 Voltios</p><br><br>
+                              <button class="more_btn">Ver más</button>
+                          </div>
+                        </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <div class="feature_item">
-                            <div class="f_icon">
-                                <img src="../img/icon/f-icon-1.png" alt="">
-                            </div>
-                            <h4>Convertidores</h4>
-                            <p>Convertidores de voltaje, ideales para utilizarlos con energía solar.</p><br><br>
-                            <a class="more_btn" href="products.html">Ver más</a>
-                        </div>
+                        <a href="products.html">
+                          <div class="feature_item">
+                              <div class="f_icon">
+                                  <img src="../img/icon/converterIcon.png" alt="">
+                              </div>
+                              <h4>Controladores</h4>
+                              <p>Controladores de voltaje, ideales para utilizarlos con energía solar.</p><br><br>
+                              <button class="more_btn">Ver más</button>
+                          </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -233,7 +251,7 @@
         <section class="world_map_area p_100">
             <div class="container">
                 <div class="world_map_inner">
-                    <img class="img-fluid" src="../img/world-map.1.png" alt="">
+                    <img class="img-fluid" src="../img/world-map.jpg" alt="">
                     <div class="bd-callout">
                         <h3><strong>¡Sunshine Solar está presente en más de 30 países a nivel mundial!</strong></h3>
                     </div>
